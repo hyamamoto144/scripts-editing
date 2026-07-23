@@ -1,0 +1,98 @@
+comments:
+- beginString: "〓注〓"
+  endString: "〓/注〓"
+- beginString: "〔[^!].*?⇒"
+  regularExpression: true
+commands:
+- beginString: "\\[.*?\\]"
+  regularExpression: true
+- beginString: "^#.*"
+  regularExpression: true
+- beginString: "^■.*"
+  regularExpression: true
+- beginString: "^◆.*"
+  regularExpression: true
+- beginString: "^○"
+  regularExpression: true
+- beginString: "^●.*"
+  regularExpression: true
+- beginString: "^・.*"
+  regularExpression: true
+characters:
+- beginString: "[①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳㉑㉒㉓㉔㉕]"
+  regularExpression: true
+- beginString: "⇒.*?〕"
+  regularExpression: true
+- beginString: "〓.*?〓"
+  regularExpression: true
+- beginString: "〓太〓"
+  endString: "〓/太〓"
+keywords:
+- beginString: "[!-/:-@\\[-`ａ-ｚＡ-Ｚ０-９]"
+  regularExpression: true
+- beginString: "[０-９]"
+  regularExpression: true
+- beginString: "★"
+- beginString: "　"
+- beginString: "、"
+- beginString: "。"
+- beginString: "コード[0-9-]*"
+  regularExpression: true
+- beginString: "リスト[0-9-]*"
+  regularExpression: true
+- beginString: "図[0-9-]*"
+  regularExpression: true
+- beginString: "画面[0-9-]*"
+  regularExpression: true
+- beginString: "表[0-9-]*"
+  regularExpression: true
+- beginString: "，"
+- beginString: "．"
+numbers:
+- beginString: "[0-9]"
+  regularExpression: true
+values:
+- beginString: "[a-zA-Z.-_]"
+  regularExpression: true
+outlineMenu:
+- beginString: "^###.*"
+  keyString: "$0"
+  bold: true
+- beginString: "^##.*"
+  keyString: "　$0"
+- beginString: "^#.*"
+  keyString: "　　　$0"
+- beginString: "^■.*"
+  bold: true
+  ignoreCase: false
+  italic: false
+  keyString: "$0"
+  underline: false
+- beginString: "^◆.*"
+  keyString: "　　$0"
+- beginString: "^○.*"
+  keyString: "　-$0"
+  italic: true
+- beginString: "^●.*"
+  keyString: "　$0"
+- beginString: "^[^\n]*?(!HERE.*)$"
+  keyString: "　$1"
+  italic: true
+strings:
+- beginString: "[\\p{Katakana}ー]"
+  regularExpression: true
+- beginString: "“"
+  endString: "”"
+- beginString: "「"
+  endString: "」"
+- beginString: "【"
+  endString: "】"
+- beginString: "〔!.*?⇒"
+  regularExpression: true
+- beginString: "（"
+  endString: "）"
+- beginString: "［"
+  endString: "］"
+extensions:
+- keyString: "txt"
+numOfObjIn: 33
