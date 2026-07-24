@@ -56,12 +56,12 @@ values:
   regularExpression: true
 outlineMenu:
 - beginString: "^###.*"
-  keyString: "$0"
+  keyString: "　　$0"
   bold: true
 - beginString: "^##.*"
   keyString: "　$0"
 - beginString: "^#.*"
-  keyString: "　　　$0"
+  keyString: "$0"
 - beginString: "^■.*"
   bold: true
   ignoreCase: false
